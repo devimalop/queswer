@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/utils.css">
+ 	<link rel="stylesheet" type="text/css" href="../lib/css/mensajes.css">
+ 	<script src="../lib/js/jquery-3.2.1.min.js"></script>
+ 	<script src="../lib/js/utils.js"></script>
+ 	<script src="../front/register.js"></script>
+	 <script src="../lib/js/mensajes.js"></script>
+	<hgroup>
+		<div class="img_container left_img_container">
+		  <img src="../img/logo_icon.png">
+		</div>
+		<div class="text">   - Nuevo Usuario -   </div>
+		<div class="img_container right_img_container">
+			<img src="../img/logo_text.png">
+		</div>
+	</hgroup>
+	<p class="register_messages message_off">mensajes de error regitro</p>
+	<form>
+	  <div class="group">
+	    <input type="text" class="save-input mandatory check-alfanumeric" name="nombre"><span class="highlight"></span><span class="bar"></span>
+	    <label>Nick</label>
+	  </div>
+	  <div class="group">
+	    <input type="text" class="save-input mandatory check-alfanumeric" name="nombrereal"><span class="highlight"></span><span class="bar"></span>
+	    <label>Nombre</label>
+	  </div>
+	  <div class="group">
+	    <input type="text" class="save-input check-alfanumeric" name="apellidos"><span class="highlight"></span><span class="bar"></span>
+	    <label>Apellidos</label>
+	  </div>
+	  <div class="group">
+	    <input type="number" min="1" step="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="save-input mandatory check-numeric" name="edad"><span class="highlight"></span><span class="bar"></span>
+	    <label>Edad</label>
+	  </div>
+	  <div class="group">
+	    <input type="password" class="save-input mandatory check-no-empty" name="contrasena"><span class="highlight"></span><span class="bar"></span>
+	    <label>Contraseña</label>
+	  </div>
+	  <div class="group">
+	    <input type="password" class="save-input mandatory check-no-empty" name="contrasena"><span class="highlight"></span><span class="bar"></span>
+	    <label>Repite Contraseña</label>
+	  </div>
+	  <div class="group">
+	  	<div class="sel sel--instituto">
+		  <select class="save-select mandatory check-select" name="instituto" id="instituto">
+		  </select>
+		</div>
+	    <!-- <input type="text" name="instituto"><span class="highlight"></span><span class="bar"></span>
+	    <label>Instituto</label> -->
+	  </div>
+	  <div class="group">
+	  	<div class="sel sel--curso">
+		  <select class="save-select mandatory check-select" name="curso" id="curso">
+		  </select>
+		</div>
+	    <!-- <input type="text" name="curso"><span class="highlight"></span><span class="bar"></span>
+	    <label>Curso</label> -->
+	  </div>
+	  <button type="button" class="button buttonBlue" id="return">Volver
+	    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+	  </button>
+	  <button type="button" class="button buttonGreen" id="register">Registrar
+	    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+	  </button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<body>
+	<link rel="stylesheet" type="text/css" href="../css/config.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/utils.css">
+ 	<link rel="stylesheet" type="text/css" href="../lib/css/mensajes.css">
+	 <script src="../lib/js/mensajes.js"></script>
+ 	<script src="../lib/js/jquery-3.2.1.min.js"></script>
+ 	<script src="../lib/js/utils.js"></script>
+ 	<script src="../front/config.js"></script>
+	<hgroup>
+		<div class="img_container left_img_container">
+		  <img src="../img/logo_icon.png">
+		</div>
+		<div class="text">   - Configuración -   </div>
+		<div class="img_container right_img_container">
+			<img src="../img/logo_text.png">
+		</div>
+	</hgroup>
+	<p class="register_messages message_off">mensajes de error</p>
+	<form>
+		<div class="container">
+			<header>
+					<div id="material-tabs">
+							<a id="tab1-tab" href="#tab1" class="active">Usuarios</a>
+							<a id="tab2-tab" href="#tab2">Preguntas</a>
+							<a id="tab3-tab" href="#tab3">Cursos</a>
+							<!-- <a id="tab4-tab" href="#tab4">4</a> -->
+							<img title="Descargar Plantilla CSV" id="downloadcsv" class="img-tab hidden" src="../img/csv-bajar.png">
+							<img title="Cargar preguntas por CSV" id="uploadcsv" class="img-tab hidden" src="../img/csv-subir.png">
+							<input id="import-csv" type="file" class="hidden">
+							<span class="yellow-bar"></span>
+					</div>
+			</header>
+
+			<div class="tab-content">
+					<div id="tab1">
+						<div class="group">
+						  	<div class="sel sel--instituto">
+							  <select class="save-select mandatory check-select" name="instituto" id="instituto">
+							  </select>
+							</div>
+						</div>
+						<div class="group">
+						  	<div class="sel sel--curso">
+							  <select class="save-select mandatory check-select" name="curso" id="curso">
+							  </select>
+							</div>
+						</div>
+						<div class="group">
+						  	<div class="sel sel--usuario">
+							  <select class="save-select mandatory check-select" name="usuario" id="usuario">
+							  </select>
+							</div>
+						</div>
+						<div id="user-common" class="hidden">
+							<hr class="separator-hr">
+							<div class="group group2">
+							  	<div class="sel sel--rol">
+								  <select class="save-select mandatory check-select" name="rol" id="rol">
+								  </select>
+								</div>
+							</div>
+							<div class="group group2">
+							    <input type="number" min="0" step="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="save-input mandatory check-numeric used" name="bonos"><span class="highlight"></span><span class="bar"></span>
+							    <label>Bonos</label>
+							</div>
+						</div>
+						<div id="user-options">
+						</div>
+					</div>
+					<div id="tab2">
+						<span style="color:transparent;">a</span>
+						<div class="group group3">
+						    <input class="save-input mandatory check-no-empty" name="TEXTO"><span class="highlight"></span><span class="bar"></span>
+						    <label>Pregunta</label>
+						</div>
+						<div class="group group3">
+						    <input class="save-input mandatory check-no-empty" name="A"><span class="highlight"></span><span class="bar"></span>
+						    <label>Respuesta A</label>
+						</div>
+						<div class="group group3">
+						    <input class="save-input mandatory check-no-empty" name="B"><span class="highlight"></span><span class="bar"></span>
+						    <label>Respuesta B</label>
+						</div>
+						<div class="group group3">
+						    <input class="save-input mandatory check-no-empty" name="C"><span class="highlight"></span><span class="bar"></span>
+						    <label>Respuesta C</label>
+						</div>
+						<div class="group group3">
+						    <input class="save-input mandatory check-no-empty" name="WIKI"><span class="highlight"></span><span class="bar"></span>
+						    <label>Wiki</label>
+						</div>
+						<div class="group">
+						  	<div class="sel sel--CORRECTA">
+							  <select class="save-select mandatory check-select" name="CORRECTA" id="CORRECTA">
+							  </select>
+							</div>
+						</div>
+						<div class="group">
+						  	<div class="sel sel--A_TEMATICA">
+							  <select class="save-select mandatory check-select" name="A_TEMATICA" id="A_TEMATICA">
+							  </select>
+							</div>
+						</div>
+						<div class="group">
+						  	<div class="sel sel--DIFICULTAD">
+							  <select class="save-select mandatory check-select" name="DIFICULTAD" id="DIFICULTAD">
+							  </select>
+							</div>
+						</div>
+					</div>
+					<div id="tab3">
+						<div class="group">
+						  	<div class="sel sel--institutocurso">
+							  <select class="save-select mandatory check-select" name="institutocurso" id="institutocurso">
+							  </select>
+							</div>
+						</div>
+						<div class="group">
+						  	<div class="sel sel--cursocurso">
+							  <select class="save-select mandatory check-select" name="cursocurso" id="cursocurso">
+							  </select>
+							</div>
+						</div>
+						<div class="group">
+						    <input type="number" min="0" max="100" step="5" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="save-input mandatory check-numeric" name="bonoscurso"><span class="highlight"></span><span class="bar"></span>
+						    <label>%Objetivo Bonos</label>
+						</div>
+					</div>
+					<!-- <div id="tab4">
+							<p>cuarta pestaña.</p>
+					</div> -->
+			</div>
+		</div>
+<!-- end container -->
+	  <button type="button" class="button buttonBlue" id="return">Volver
+	    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+	  </button>
+	  <button type="button" class="button buttonGreen hidden" id="edit">Editar
+	    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+	  </button>
+	  <button type="button" class="button buttonGreen hidden" id="insert-question">Añadir
+	    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+	  </button>
+	  <button type="button" class="button buttonGreen hidden" id="edit-course">Editar
+	    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+	  </button>
+	</form>
+</body>
+</html>

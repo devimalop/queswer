@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<link rel="stylesheet" type="text/css" href="../css/stats.css">
+ 	<link rel="stylesheet" type="text/css" href="../lib/css/mensajes.css">
+	<script src="../lib/js/mensajes.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ 	<script src="../lib/js/jquery-3.2.1.min.js"></script>
+ 	<script src="../lib/js/utils.js"></script>
+ 	<script src="../front/stats.js"></script>
+	<hgroup>
+		<div class="img_container left_img_container">
+		  <img src="../img/logo_icon.png">
+		</div>
+		<div class="text">   - Estadísticas -   </div>
+		<div class="img_container right_img_container">
+			<img src="../img/logo_text.png">
+		</div>
+	</hgroup>
+	<p class="register_messages message_off">mensajes de error regitro</p>
+	<form>
+		<!-- <div class="fila-superior"> -->
+			<div class="group">
+			  	<div class="sel sel--instituto">
+				  <select class="save-select mandatory check-select" name="instituto" id="instituto">
+				  </select>
+				</div>
+			</div>
+			<div class="group">
+			  	<div class="sel sel--curso">
+				  <select class="save-select mandatory check-select" name="curso" id="curso">
+				  </select>
+				</div>
+			</div>
+		<!-- </div> -->
+		<!-- <div class="fila-superior"> -->
+			<div class="group">
+			  	<div class="sel sel--usuario">
+				  <select class="save-select mandatory check-select" name="usuario" id="usuario">
+				  </select>
+				</div>
+			</div>
+			<div class="group">
+			  	<div class="sel sel--tematica">
+				  <select class="save-select mandatory check-select" name="tematica" id="tematica">
+				  </select>
+				</div>
+			</div>
+			<div class="group hidden">
+			  	<div class="sel sel--range">
+				  <select class="save-select mandatory check-select" name="range" id="range">
+				  </select>
+				</div>
+			</div>
+			<div class="group">
+			  	<div class="sel sel--tipografica">
+				  <select class="save-select mandatory check-select" name="tipografica" id="tipografica">
+				  </select>
+				</div>
+			</div>
+			<button type="button" class="button buttonGreen" id="ver">Ver
+			    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+			</button>
+		<!-- </div> -->
+	  <div id="chart_div"></div>
+	  <button type="button" class="button buttonBlue" id="return">Volver
+	    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+	  </button>
+	</form>
+</body>
+</html>
