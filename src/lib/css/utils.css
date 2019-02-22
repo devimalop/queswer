@@ -1,0 +1,18 @@
+  .red-text{
+      color: red !important;
+  }
+  .float-right{
+      float: right;
+  }
+  .blue-text{
+      color: blue !important;
+  }
+  .red-border{
+      border-color: red !important;
+  }
+  .red-border-validate{
+      border-color: red !important;
+  }
+  .red-text-validate{
+      color: red !important;
+  }

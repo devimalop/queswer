@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "blackboard";
+    src: url(../lib/tff/OldBookshop.ttf) format("truetype");
+    /*src: url(../lib/tff/Cheveuxdange.ttf) format("truetype");*/
+    /*src: url(../lib/tff/DKCrayonCrumble.ttf) format("truetype");*/
+}
+
+#blackboard{
+	width:1600px;
+}
+#play{
+	top:400px;
+	left:450px;
+	position: absolute;
+	cursor: pointer;
+}
+#stats{
+	top:550px;
+	left:500px;
+	position: absolute;
+	cursor: pointer;
+}
+#config{
+	top:700px;
+	left:550px;
+	position: absolute;
+	cursor: pointer;
+}
+#best{
+    height: 140px;
+    top: 665px;
+	left:550px;
+	position: absolute;
+	cursor: pointer;
+}
+#exit{
+	top:825px;
+	left:1250px;
+	position: absolute;
+	cursor: pointer;
+}
+#back{
+	top: 730px;
+    left: 1129px;
+    position: absolute;
+    cursor: pointer;
+	height: 150px;
+}
+#wellcome{
+	top:270px;
+	left:650px;
+	position: absolute;
+    color: white;
+    font-size: 33px;
+    font-family: "blackboard";
+}
+#bestcollegecourse{
+	top:350px;
+	left:345px;
+	position: absolute;
+    color: white;
+    font-size: 33px;
+    font-family: "blackboard";
+}
+#bestcollege{
+	top:450px;
+	left:345px;
+	position: absolute;
+    color: pink;
+    font-size: 33px;
+    font-family: "blackboard";
+}
+#bestcourse{
+	top:550px;
+	left:345px;
+	position: absolute;
+    color: cyan;
+    font-size: 33px;
+    font-family: "blackboard";
+}
+#bestall{
+	top:650px;
+	left:345px;
+	position: absolute;
+    color: green;
+    font-size: 50px;
+    font-family: "blackboard";
+}
+#play:hover, #stats:hover, #config:hover, #exit:hover, #best:hover, #back:hover {
+    transform: scale(1.2, 1.2);
+}
+.hidden{
+	display:none;
+}

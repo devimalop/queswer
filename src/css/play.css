@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "blackboard";
+    src: url(../lib/tff/OldBookshop.ttf) format("truetype");
+    /*src: url(../lib/tff/Cheveuxdange.ttf) format("truetype");*/
+    /*src: url(../lib/tff/DKCrayonCrumble.ttf) format("truetype");*/
+}
+
+#blackboard{
+	width:1600px;
+}
+#logo{
+    /*width:200px;*/
+	height:175px;
+	top: 550px;
+	left: 975px;
+	position: absolute;
+}
+#next{
+	width: 200px;
+    top: 700px;
+    left: 1100px;
+    position: absolute;
+}
+#next:hover{
+	transform: scale(1.2, 1.2);
+	cursor: pointer;
+}
+#question{
+	top:250px;
+	left:480px;
+	position: absolute;
+    color: #b0f0f7;
+    font-size: 33px;
+    font-family: "blackboard";
+    width: 850px;
+}
+.answer{
+	left:375px;
+	position: absolute;
+    color: white;
+    font-size: 33px;
+    font-family: "blackboard";
+    cursor: pointer;
+}
+
+.answer:hover{
+    transform: scale(1.2, 1.2);
+}
+#a_answer{
+	top:450px;
+}
+#b_answer{
+	top:600px;
+}
+#c_answer{
+	top:750px;
+}
+#wiki{
+    width: 400px;
+    top: 425px;
+    left: 900px;
+    position: absolute;
+    color: #62bf6a;
+    font-size: 33px;
+    font-family: "blackboard";
+}
+.hidden{
+	display: none;
+}
+/* Entire text flipped around */
+.inverted {
+	display: inline-block;
+  	vertical-align: top;
+  	transform: scaleX(-1); /* Or also:   rotateY(180deg) */
+  	-ms-filter: fliph;
+  	filter: fliph;
+}
+.success{
+	color: #62bf6a !important;
+}
+.fail{
+	color: #b16262 !important;
+}
+.correct{
+	color: #b0f0f7 !important;
+}
+.incorrect{
+    text-decoration:line-through;
+}
+#result_text, #bono_text{
+    left:375px;
+    position: absolute;
+    font-family: "blackboard";
+}
+#result_text{
+    top: 361px;
+    color: white;
+    font-size: 45px;
+    left: 615px;
+}
+#bono_text{
+    top: 541px;
+    color: green;
+    font-size: 53px;
+    left: 470px;
+}
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+    width: 850px;
+    height: 3px;
+    background-color: #b3b3b3;
+    top: 197px;
+    left: 475px;
+    border-radius: 1px;
+    position: absolute;
+}
